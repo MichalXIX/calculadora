@@ -78,6 +78,12 @@ h1 {
     transition: transform 0.2s ease-in-out;
 }
 
+.button-calculator:active {
+    transform: scale(0.8);
+    background: rgb(112, 0, 177);
+    transition: transform 0.1s ease-in-out;
+}
+
 @media (max-width: 1130px) {
     .calculadora {
         width: 25%; /* Aumenta a largura em telas menores */
