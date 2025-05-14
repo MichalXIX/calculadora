@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <div class="all">
+        <h1 class="name-dev">Miguel Artur</h1>
+
+        <div class="calculadora">
+            <h1 class="info-name">Calculadora</h1>
+            <p id="result"></p>
+            <table class="button-area">
+                <tr>
+                    <td><button class="button-calculator" onclick="clean()">C</button></td>
+                    <td><button class="button-calculator" onclick="back()"><</button></td>
+                    <td><button class="button-calculator" onclick="insert('/')">/</button></td>
+                    <td><button class="button-calculator"onclick="insert('*')">x</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="button-calculator" onclick="insert('7')">7</button></td>
+                    <td><button class="button-calculator" onclick="insert('8')">8</button></td>
+                    <td><button class="button-calculator" onclick="insert('9')">9</button></td>
+                    <td><button class="button-calculator" onclick="insert('-')">-</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="button-calculator" onclick="insert('4')">4</button></td>
+                    <td><button class="button-calculator" onclick="insert('5')">5</button></td>
+                    <td><button class="button-calculator" onclick="insert('6')">6</button></td>
+                    <td><button class="button-calculator" onclick="insert('+')">+</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="button-calculator" onclick="insert('1')">1</button></td>
+                    <td><button class="button-calculator" onclick="insert('2')">2</button></td>
+                    <td><button class="button-calculator" onclick="insert('3')">3</button></td>
+                    <td rowspan="2"><button class="button-calculator" id="estica-1" style="height: 104px;" onclick="calcular()">=</button></td> <!-- Corrigido rowspan -->
+                </tr>
+                
+                <tr>
+                    <td colspan="2"><button class="button-calculator" id="estica-2" style="width: 104px;" onclick="insert('0')">0</button></td> <!-- Corrigido colspan -->
+                    <td><button class="button-calculator" onclick="insert('.')">.</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

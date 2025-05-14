@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: #020024;
+    background: linear-gradient(36deg, rgba(2, 0, 36, 1) 0%, rgba(100, 9, 121, 1) 35%, rgba(13, 0, 255, 1) 100%);
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+.name-dev {
+    margin: 5px auto;
+}
+
+.calculadora {
+    background-color: rgba(2, 0, 36, 0.6);
+    width: 18%;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 4px 10px rgb(175, 7, 226); /* Adiciona uma sombra violeta */
+}
+
+.info-name {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#result {
+    background-color: white;
+    height: 40px;
+    width: 85%; /* Certifique-se de que a largura está definida */
+    border-radius: 3px;
+    margin: 0 auto; /* Centraliza horizontalmente */
+    display: block; /* Garante que o elemento seja tratado como bloco */
+    text-align: right;
+    font-size: 20px;
+    padding: 6px;
+    word-wrap: break-word; /* Quebra palavras longas */
+    overflow: hidden; /* Esconde o conteúdo que ultrapassa */
+    white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+}
+
+.button-area {
+    margin: 10px auto;
+}
+
+.button-calculator {
+    height: 50px;
+    width: 50px;
+    font-size: 18px;
+    background: rgb(0, 0, 0, 0.4);
+    border: none;
+    color: white;
+}
+
+#estica1 {
+    height: 106px;
+}
+
+#estica2 {
+    width: 106px;
+}
+
+.button-calculator:hover {
+    transform: scale(1.2);
+    background: rgb(32, 0, 129);
+    transition: transform 0.2s ease-in-out;
+}
+
+@media (max-width: 1130px) {
+    .calculadora {
+        width: 25%; /* Aumenta a largura em telas menores */
+    }
+}
+
+@media (max-width: 930px) {
+    .calculadora {
+        width: 35%; /* Aumenta a largura em telas menores */
+    }
+}
+
+@media (max-width: 665px) {
+    .calculadora {
+        width: 45%; /* Usa toda a largura da tela */
+        }
+}
+
+@media (max-width: 480px) {
+    .calculadora {
+        width: 55%; /* Usa toda a largura da tela */
+        }
+}
+
+@media (max-width: 390px) {
+    .calculadora {
+        width: 65%; /* Usa toda a largura da tela */
+        }
+}
+
+@media (max-width: 325px) {
+    .calculadora {
+        width: 75%; /* Usa toda a largura da tela */
+        }
+}
+
+@media (max-width: 290px) {
+    .calculadora {
+        width: 85%; /* Usa toda a largura da tela */
+    }
+}
+
+@media (max-width: 250px) {
+    .calculadora {
+        width: 95%; /* Usa toda a largura da tela */
+    }
+}
+
+@media (max-width: 220px) {
+    .calculadora {
+        width: 98%; /* Usa toda a largura da tela */
+    }
+}
